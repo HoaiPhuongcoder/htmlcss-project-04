@@ -514,6 +514,7 @@ button {
   margin-top: 70px;
   display: grid;
   grid-template-columns: auto 1fr auto;
+  column-gap: 65px;
 }
 .service__column {
   display: flex;
@@ -561,4 +562,43 @@ button {
 .service-item__more::after {
   content: url(../icons/arrow-up-right.svg);
   margin: 1px 0 0 5px;
+}
+.service__media {
+  position: relative;
+  margin-top: 18px;
+}
+.service__media::after {
+  position: absolute;
+  content: "";
+  height: 350px;
+  left: 16px;
+  right: 16px;
+  bottom: 0;
+  border-radius: 10px;
+  background: linear-gradient(180deg, #9df1fb 0%, #73d0db 108.14%);
+}
+.service__img {
+  display: block;
+  position: relative;
+  width: 100%;
+  z-index: 1;
+}
+.service__cta-wrap {
+  margin-top: 21px;
+  display: flex;
+  justify-content: center;
+}
+.service__cta {
+  min-width: 214px;
+  border-radius: 31px;
+  border: 1px solid rgba(255, 91, 46, 0.6);
+  box-shadow: 0px 13px 26px -8px rgba(255, 91, 46, 0.42);
+  color: var(--primary-color);
+  text-align: center;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 16px; /* 100% */
+}
+.service__cta:hover {
+  background-color: var(--primary-color);
 }
